@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ptns Media Player — 版本日志</title>
+  <style>
+    :root{--accent:#5c6cff;--bg:#0f1724;--card:#0b1220;--muted:#9aa4c0;--glass:rgba(255,255,255,0.04)}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system;color:#e6eef8;background:linear-gradient(180deg,#071129,#071426);}a{text-decoration:none;color:inherit}
+    .container{max-width:900px;margin:0 auto;padding:26px}
+    .title{font-size:32px;font-weight:800;margin-bottom:16px}
+    .card{padding:20px;border-radius:14px;background:var(--glass);border:1px solid rgba(255,255,255,0.05);margin-bottom:18px}
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:4px 8px;border-radius:6px;background:rgba(255,255,255,0.08);font-size:13px;margin-left:8px}
+    .back{display:inline-block;margin-bottom:20px;color:var(--muted)}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;box-shadow:0 6px 18px rgba(92,108,255,0.18)}
+    .ghost{background:transparent;border:1px solid rgba(255,255,255,0.05);padding:8px 12px;border-radius:10px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 返回主页 -->
+    <a class="back" href="index.html">← 返回首页</a>
+
+    <!-- 标题 -->
+    <div class="title">版本日志（Versions）</div>
+    <div class="muted" style="margin-bottom:20px">查看 Ptns Media Player 的每次更新内容与发布时间。</div>
+
+    <!-- v1.0.0 -->
+    <div class="card">
+      <div style="font-size:20px;font-weight:700">v1.0.0 <span class="tag">当前版本</span></div>
+      <div class="muted" style="font-size:13px;margin-bottom:12px">发布日期：2025-11-25</div>
+      <ul style="line-height:1.7">
+      <li>上一曲 / 播放/暂停 / 下一曲（图标化），播放状态实时切换。</li>
+      <li>进度条支持拖拽（拖拽期间不会被播放器位置更新覆盖），释放后跳转到目标位置。</li>
+      <li>时间显示：实时显示当前播放时间与总时长（例如 00:00 / 04:20）。</li>
+      <li>音量滑块（0–100）与 QAudioOutput 同步；播放速度下拉支持 0.5x–2.0x。</li>
+      <li>以结构化条目记录播放历史。</li>
+      <li>播放进入 Playing 时新建历史条目；暂停/停止时累加当前播放段的时长；播放结束时标记为已完成。</li>
+      <li>历史对话框按最近项展示，双击历史条目可尝试恢复并播放对应文件（若文件仍然可访问）。</li>
+      </ul>
+          <section id="download1.0" style="margin-top:22px">
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+        <div>
+          <div style="font-size:18px;font-weight:800">下载 Ptns Media Player</div>
+          <div class="muted small">正式版本：1.0.0 · 支持 Windows x64</div>
+          <div class="muted small">测试版本：1.0.1 · 本版本为测试版！</div>
+        </div>
+        <div style="display:flex;gap:12px">
+          <a class="btn" href="https://1drv.ms/f/c/79147377a4ce9a37/IgB_eCUJgfJ2SKgbg4JTQfsMAYR6cvFmUG4qBicfvMMLago?e=vVmONK">下载正式版</a>
+          <a class="ghost" href="./404.html">下载测试版（暂不提供）</a>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- 保留 --
+    <div class="card">
+      <div style="font-size:20px;font-weight:700">版本号</div>
+      <div class="muted" style="font-size:13px;margin-bottom:12px">发布日期：2024-11-20（示例）</div>
+      <ul style="line-height:1.7">
+        <li>创建项目核心框架。</li>
+        <li>实现基础 UI 布局。</li>
+      </ul>
+    </div> -->
+
+    <div style="text-align:center;margin-top:30px;color:var(--muted)">© 2025 Ptns Media Player. 版权所有。</div>
+
+  </div>
+</body>
+</html>
